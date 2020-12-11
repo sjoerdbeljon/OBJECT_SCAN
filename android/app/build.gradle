@@ -58,8 +58,8 @@ android {
         }
         dev {
             dimension "mode"
-            applicationIdSuffix ".developerapp"
-            versionNameSuffix "-developerApp"
+            applicationIdSuffix ""
+            versionNameSuffix ""
         }
     }
     buildTypes {
