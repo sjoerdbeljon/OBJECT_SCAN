@@ -8,6 +8,7 @@ import com.mendix.mendixnative.activity.MendixReactActivity;
 import com.mendix.mendixnative.config.AppUrl;
 import com.mendix.mendixnative.react.MendixApp;
 import com.mendix.mendixnative.react.MxConfiguration;
+import com.rnfs.RNFSPackage;
 
 public class MainActivity extends MendixReactActivity {
     @Override
@@ -18,3 +19,28 @@ public class MainActivity extends MendixReactActivity {
         super.onCreate(savedInstanceState);
     }
 }
+
+public class MainActivity extends Activity implements DefaultHardwareBackBtnHandler {
+
+    @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    mReactRootView = new ReactRootView(this);
+ 
+    mReactInstanceManager = ReactInstanceManager.builder()
+      .setApplication(getApplication())
+      .setBundleAssetName("index.android.bundle")
+      .setJSMainModuleName("index.android")
+      .addPackage(new MainReactPackage())
+      .addPackage(new RNFSPackage())      // <------- add package 
+      .setUseDeveloperSupport(BuildConfig.DEBUG)
+      .setInitialLifecycleState(LifecycleState.RESUMED)
+      .build();
+ 
+    mReactRootView.startReactApplication(mReactInstanceManager, "ExampleRN", null);
+ 
+    setContentView(mReactRootView);
+  }}
+ 
+  
+ 
