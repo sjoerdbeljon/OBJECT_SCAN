@@ -3,4 +3,4 @@ PRODUCT_BUNDLE_IDENTIFIER = $(BUNDLE_IDENTIFIER)$(BUNDLE_IDENTIFIER_APPEND)
 BUNDLE_DISPLAY_NAME = HVC Object status
 BUNDLE_IDENTIFIER = com.hvcassetmanagementscan.mobile
 
-RUNTIME_URL = http:\/\/localhost:8080
+RUNTIME_URL = https:\/\/hvc-objectstatus-accp.mendixcloud.com
