@@ -1,5 +1,5 @@
 #include "../../Config/config.xcconfig"
 
 MAIN_STORY_BOARD = LaunchApp
-BUNDLE_DISPLAY_NAME = Dev-HVC Object status
-BUNDLE_IDENTIFIER_APPEND = 
+BUNDLE_DISPLAY_NAME = Dev-HVC - Asset management scan
+BUNDLE_IDENTIFIER_APPEND = .developerapp

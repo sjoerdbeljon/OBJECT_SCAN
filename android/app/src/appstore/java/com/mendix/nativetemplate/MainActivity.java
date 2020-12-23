@@ -18,3 +18,6 @@ public class MainActivity extends MendixReactActivity {
         super.onCreate(savedInstanceState);
     }
 }
+ 
+  
+ 
