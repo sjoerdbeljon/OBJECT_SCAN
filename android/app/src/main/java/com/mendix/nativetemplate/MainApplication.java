@@ -14,9 +14,6 @@ import org.devio.rn.splashscreen.SplashScreen;
 
 import java.util.List;
 
-import com.anyline.reactnative.AnylinePackage;
-import com.rnfs.RNFSPackage;
-
 public class MainApplication extends MendixReactApplication {
     @Override
     public boolean getUseDeveloperSupport() {
